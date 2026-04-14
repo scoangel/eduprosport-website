@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Brand Colors */
+  --color-brand-blue: #046bd2;
+  --color-brand-blue-dark: #045cb4;
+  --color-accent-cyan: #00E5FF;
+  --color-accent-orange: #FF6B35;
+
+  /* Background Surfaces */
+  --color-bg-dark: #0A0E17;
+  --color-bg-card: #111827;
+  --color-bg-elevated: #1F2937;
+
+  /* Text */
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #94A3B8;
+  --color-text-accent: #00E5FF;
+
+  /* Semantic */
+  --color-success: #10B981;
+  --color-ice: #E0F2FE;
+
+  /* Font Families */
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-space-grotesk);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-primary);
+}
+
+/* Glow pulse animation for CTAs */
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.3), 0 0 40px rgba(0, 229, 255, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(0, 229, 255, 0.5), 0 0 60px rgba(0, 229, 255, 0.2);
+  }
+}
+
+/* Marquee animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
