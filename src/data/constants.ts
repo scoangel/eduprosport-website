@@ -140,7 +140,7 @@ export const LECTURERS: Lecturer[] = [
       "HC Slovan Bratislava",
       "Physiology & Diagnostics",
     ],
-    image: "/images/team/team_eugen_laczo.jpg",
+    image: "/images/team/team_eugen_laczo_hex.png",
     bio: "University professor specializing in physiology and diagnostics. Coached Slovakia national team and served as Olympics trainer at Salt Lake City and Sydney.",
   },
   {
@@ -152,7 +152,7 @@ export const LECTURERS: Lecturer[] = [
       "World Championship Bronze",
       "Highest Coaching Cert",
     ],
-    image: "/images/team/team_noro_javorcik.jpg",
+    image: "/images/team/team_noro_javorcik_hex.png",
     bio: "HDC Europe program director with FTVŠ graduate degree and highest coaching certification. Led Slovakia U18 as head coach and assisted U17/U20 to World Championship bronze.",
   },
   {
@@ -164,7 +164,7 @@ export const LECTURERS: Lecturer[] = [
       "Performance Diagnostics",
       "Training Program Design",
     ],
-    image: "/images/team/team_milan-kabat.jpg",
+    image: "/images/team/team_milan-kabat_hex.png",
     bio: "Sports education PhD specializing in athletic fitness, performance diagnostics, and training program design.",
   },
 ];
