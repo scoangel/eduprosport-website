@@ -13,10 +13,10 @@ export const metadata: Metadata = {
 };
 
 const stats = [
-  { value: 15, suffix: "+", label: "Countries" },
-  { value: 500, suffix: "+", label: "Coaches Certified" },
-  { value: 7, suffix: "", label: "Course Programs" },
-  { value: 10, suffix: "+", label: "Years of Excellence" },
+  { value: 7, suffix: "+", label: "European Countries" },
+  { value: 7, suffix: "", label: "Certified Programs" },
+  { value: 3, suffix: "", label: "Olympic-Level Experts" },
+  { value: 2, suffix: "", label: "Olympic Games Experience" },
 ];
 
 export default function AboutPage() {

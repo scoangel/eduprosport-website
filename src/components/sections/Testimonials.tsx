@@ -52,7 +52,7 @@ export default function Testimonials() {
             <div className="border-t border-white/10 pt-6">
               <p className="font-bold text-white">{t.author}</p>
               <p className="text-text-secondary text-sm">
-                {t.role} — {t.flag} {t.country}
+                {t.role ? `${t.role} — ` : ""}{t.flag} {t.country}
               </p>
             </div>
           </motion.div>

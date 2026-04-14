@@ -55,7 +55,7 @@ export default function Certifications() {
           Become a certified trainer for hockey centers worldwide
         </p>
         <Button href="/#pricing" size="lg">
-          Start Your Journey
+          Start Your Certification
         </Button>
       </div>
     </SectionWrapper>

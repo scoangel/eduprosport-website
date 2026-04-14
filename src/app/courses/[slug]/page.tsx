@@ -70,22 +70,21 @@ export default async function CourseDetailPage({
 
             <h2 className="text-2xl font-bold mb-6">Course Overview</h2>
             <p className="text-text-secondary leading-relaxed mb-8">
-              {course.description} This comprehensive program is designed to
-              provide in-depth knowledge and practical skills that can be
-              immediately applied in professional hockey settings. Our
-              internationally certified curriculum covers both theoretical
-              foundations and hands-on applications.
+              {course.description} Developed by our team of Olympic-level sports
+              scientists, this program combines laboratory-grade diagnostics with
+              on-ice application. Participants leave with actionable protocols
+              they can implement in their next training session.
             </p>
 
             <h2 className="text-2xl font-bold mb-6">What You&apos;ll Learn</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
               {[
-                "Scientific approach to the subject matter",
-                "Practical application in real hockey settings",
-                "Performance measurement and tracking",
-                "International best practices and standards",
-                "Case studies from professional hockey",
-                "Hands-on workshop exercises",
+                "Evidence-based sports science methodologies",
+                "On-ice application with real-time feedback",
+                "Performance diagnostics and measurement protocols",
+                "International coaching standards and best practices",
+                "Periodization and load management strategies",
+                "Hands-on workshops with Olympic-level experts",
               ].map((item) => (
                 <div key={item} className="flex items-start gap-3">
                   <Award size={16} className="text-accent-cyan mt-1 flex-shrink-0" />
@@ -129,7 +128,7 @@ export default async function CourseDetailPage({
               </div>
 
               <Button href="/contact" className="w-full mb-3">
-                Enroll Now
+                Start Your Certification
               </Button>
               <Button href="/contact" variant="secondary" className="w-full">
                 Ask a Question

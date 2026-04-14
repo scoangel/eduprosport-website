@@ -7,9 +7,9 @@ export const NAV_LINKS = [
 ];
 
 export const STATS = [
-  { value: "15+", label: "Countries" },
-  { value: "500+", label: "Coaches Certified" },
-  { value: "7", label: "Course Programs" },
+  { value: "7+", label: "European Countries" },
+  { value: "7", label: "Certified Programs" },
+  { value: "3", label: "Olympic-Level Experts" },
 ];
 
 export const MESSAGING_PILLARS = [
@@ -164,25 +164,25 @@ export const LECTURERS: Lecturer[] = [
 export const TESTIMONIALS = [
   {
     quote:
-      "HDC Europe's certification transformed how I coach. The international standards gave me credibility with top clubs.",
-    author: "Tomáš Horváth",
-    role: "Head Coach",
+      "HDC Europe's certification transformed how I approach coaching. The international standards gave our program credibility with top clubs across Europe.",
+    author: "Head Coach",
+    role: "",
     country: "Czech Republic",
     flag: "🇨🇿",
   },
   {
     quote:
-      "The systematic approach to player development is unmatched. My players' metrics improved 40% in one season.",
-    author: "Klaus Berger",
-    role: "Hockey Center Director",
+      "The systematic approach to player development has transformed our center. We saw measurable improvement in player conditioning within the first season.",
+    author: "Hockey Center Director",
+    role: "",
     country: "Austria",
     flag: "🇦🇹",
   },
   {
     quote:
-      "Prof. Laczo's expertise in conditioning was a game-changer for our training program.",
-    author: "Mikko Virtanen",
-    role: "Head Coach",
+      "Prof. Laczo's expertise in conditioning was a game-changer for our training program. The science-driven methodology sets HDC apart.",
+    author: "Coaching Director",
+    role: "",
     country: "Finland",
     flag: "🇫🇮",
   },
@@ -195,7 +195,7 @@ export const COUNTRIES = [
   { name: "Finland", flag: "🇫🇮" },
   { name: "Switzerland", flag: "🇨🇭" },
   { name: "Germany", flag: "🇩🇪" },
-  { name: "Russia", flag: "🇷🇺" },
+  { name: "Sweden", flag: "🇸🇪" },
 ];
 
 export const CERTIFICATION_STEPS = [

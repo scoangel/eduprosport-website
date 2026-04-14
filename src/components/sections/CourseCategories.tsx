@@ -13,6 +13,7 @@ const categories = [
     description: "Master advanced coaching methodologies backed by sports science",
     gradient: "from-brand-blue/40 to-accent-cyan/20",
     href: "/courses?audience=Coaches",
+    comingSoon: false,
   },
   {
     title: "For Players",
@@ -20,20 +21,21 @@ const categories = [
     description: "Elevate your game with scientific training and nutrition methods",
     gradient: "from-accent-cyan/30 to-brand-blue/20",
     href: "/courses?audience=Players",
+    comingSoon: false,
   },
   {
     title: "For Hockey Centers",
-    count: 3,
     description: "Transform your hockey center with world-class programs",
     gradient: "from-brand-blue-dark/40 to-brand-blue/20",
     href: "/courses?audience=Centers",
+    comingSoon: true,
   },
   {
     title: "For Parents",
-    count: 1,
     description: "Support your young player's development with expert guidance",
     gradient: "from-accent-orange/20 to-brand-blue/20",
     href: "/courses?audience=Parents",
+    comingSoon: true,
   },
 ];
 
@@ -57,7 +59,7 @@ export default function CourseCategories() {
                 <div className="p-5">
                   <h3 className="text-lg font-bold mb-1">{cat.title}</h3>
                   <span className="inline-block text-xs text-accent-cyan bg-accent-cyan/10 rounded-full px-2 py-0.5 mb-3">
-                    {cat.count} {cat.count === 1 ? "course" : "courses"}
+                    {cat.comingSoon ? "Coming Soon" : `${cat.count} ${cat.count === 1 ? "course" : "courses"}`}
                   </span>
                   <p className="text-text-secondary text-sm mb-4">{cat.description}</p>
                   <span className="inline-flex items-center gap-1 text-sm font-medium text-accent-cyan group-hover:gap-2 transition-all">

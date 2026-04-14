@@ -55,7 +55,7 @@ export default function Navbar() {
           {/* Desktop CTA */}
           <div className="hidden md:block">
             <Button href="/contact" size="sm">
-              Enroll Now
+              Start Your Certification
             </Button>
           </div>
 
@@ -92,7 +92,7 @@ export default function Navbar() {
                 </Link>
               ))}
               <Button href="/contact" size="md" className="mt-2">
-                Enroll Now
+                Start Your Certification
               </Button>
             </div>
           </motion.div>

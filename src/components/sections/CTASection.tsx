@@ -22,7 +22,7 @@ export default function CTASection() {
             ?
           </h2>
           <p className="text-lg text-text-secondary mb-10">
-            Join 500+ certified coaches across 15 European countries
+            Join certified coaches across 7+ European countries
           </p>
 
           {/* Inline form */}
@@ -36,7 +36,7 @@ export default function CTASection() {
               className="flex-1 px-5 py-3 rounded-xl bg-bg-elevated border border-white/10 text-white placeholder:text-text-secondary focus:outline-none focus:border-accent-cyan/50 transition-colors"
               required
             />
-            <Button type="submit">Get Started</Button>
+            <Button type="submit">Start Your Certification</Button>
           </form>
 
           {/* Phone CTA */}

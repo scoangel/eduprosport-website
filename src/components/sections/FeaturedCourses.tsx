@@ -94,7 +94,7 @@ export default function FeaturedCourses() {
                   </p>
                 </div>
                 <Button href={`/courses/${course.slug}`} size="sm">
-                  Enroll Now
+                  Start Your Certification
                 </Button>
               </div>
             </div>

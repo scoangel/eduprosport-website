@@ -71,8 +71,8 @@ export default async function Image() {
               fontSize: 16,
             }}
           >
-            <span>15+ Countries</span>
-            <span>500+ Coaches</span>
+            <span>7+ Countries</span>
+            <span>3 Olympic-Level Experts</span>
             <span>7 Programs</span>
           </div>
         </div>
