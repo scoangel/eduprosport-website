@@ -40,12 +40,21 @@ export const metadata: Metadata = {
     title: "HDC Europe — Internationally Certified Hockey Performance System",
     description:
       "From coach preparation through player education to measurable performance growth.",
+    images: [
+      {
+        url: "/images/og-image.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "HDC Europe — Hockey Performance System",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "HDC Europe — Hockey Performance System",
     description:
       "From coach preparation through player education to measurable performance growth.",
+    images: ["/images/og-image.jpeg"],
   },
 };
 

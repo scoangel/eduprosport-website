@@ -47,6 +47,24 @@ export default function HeroBackground() {
       {/* Dark base */}
       <div className="absolute inset-0 bg-bg-dark" />
 
+      {/* Video background */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover opacity-40 hidden md:block"
+      >
+        <source src="/images/hero-bg.mp4" type="video/mp4" />
+      </video>
+      {/* Mobile fallback image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center opacity-30 md:hidden"
+        style={{ backgroundImage: "url('/images/hero-mobile.jpeg')" }}
+      />
+      {/* Dark overlay on video */}
+      <div className="absolute inset-0 bg-bg-dark/50" />
+
       {/* Animated gradient orbs */}
       <div
         className="hero-orb absolute w-[600px] h-[600px] rounded-full opacity-20 blur-[120px] will-change-transform"

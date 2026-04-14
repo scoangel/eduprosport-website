@@ -8,9 +8,13 @@ import { CONTACT_INFO } from "@/data/constants";
 export default function CTASection() {
   return (
     <section id="cta" className="relative py-24 overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-brand-blue/20 via-bg-dark to-accent-cyan/10" />
-      <div className="absolute inset-0 bg-bg-dark/60" />
+      {/* Background image + overlay */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: "url('/images/cta-bg.jpeg')" }}
+      />
+      <div className="absolute inset-0 bg-bg-dark/80" />
+      <div className="absolute inset-0 bg-gradient-to-br from-brand-blue/20 via-transparent to-accent-cyan/10" />
 
       <div className="relative z-10 max-w-3xl mx-auto px-4 md:px-6 text-center">
         <AnimatedSection>

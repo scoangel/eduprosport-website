@@ -2,7 +2,7 @@ export const NAV_LINKS = [
   { label: "Home", href: "/" },
   { label: "Courses", href: "/courses" },
   { label: "About", href: "/about" },
-  { label: "Certifications", href: "/#certifications" },
+  { label: "Certifications", href: "/certifications" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -45,6 +45,7 @@ export interface Course {
   price: number;
   popular?: boolean;
   slug: string;
+  thumbnail?: string;
 }
 
 export const COURSES: Course[] = [
@@ -57,6 +58,7 @@ export const COURSES: Course[] = [
     price: 499,
     popular: true,
     slug: "sport-performance-structure",
+    thumbnail: "/images/courses/course-thumb-1.jpeg",
   },
   {
     code: "CC002",
@@ -66,6 +68,7 @@ export const COURSES: Course[] = [
       "Master the science of periodization and motor skills development for hockey players at all levels.",
     price: 599,
     slug: "training-load-periodization",
+    thumbnail: "/images/courses/course-thumb-2.jpeg",
   },
   {
     code: "CC003",
@@ -75,6 +78,7 @@ export const COURSES: Course[] = [
       "Understanding how the body adapts to training stimuli and how to maximize adaptation effectiveness.",
     price: 549,
     slug: "somatic-adaptation",
+    thumbnail: "/images/courses/course-thumb-3.jpeg",
   },
   {
     code: "CC004",
@@ -84,6 +88,7 @@ export const COURSES: Course[] = [
       "Learn to create scientifically-backed training and game plans with precisely calibrated workloads.",
     price: 649,
     slug: "training-game-plans",
+    thumbnail: "/images/courses/course-thumb-4.jpeg",
   },
   {
     code: "CC005",
@@ -93,6 +98,7 @@ export const COURSES: Course[] = [
       "Specialized course on designing safe and effective return-to-play programs after injuries.",
     price: 699,
     slug: "post-injury-load",
+    thumbnail: "/images/courses/course-thumb-5.jpeg",
   },
   {
     code: "CC006",
@@ -102,6 +108,7 @@ export const COURSES: Course[] = [
       "Comprehensive program for educating all team staff members on modern hockey training methodologies.",
     price: 799,
     slug: "team-education-program",
+    thumbnail: "/images/courses/course-thumb-6.jpeg",
   },
   {
     code: "PC001",
@@ -111,6 +118,7 @@ export const COURSES: Course[] = [
       "Evidence-based nutrition guide for hockey players covering pre-game, recovery, and season-long dietary strategies.",
     price: 299,
     slug: "hockey-nutrition",
+    thumbnail: "/images/courses/course-players.jpeg",
   },
 ];
 
@@ -235,7 +243,7 @@ export const FOOTER_COLUMNS = {
   quickLinks: [
     { label: "Home", href: "/" },
     { label: "Courses", href: "/courses" },
-    { label: "Certifications", href: "/#certifications" },
+    { label: "Certifications", href: "/certifications" },
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
   ],

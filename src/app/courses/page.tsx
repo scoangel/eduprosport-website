@@ -58,12 +58,25 @@ export default function CoursesPage() {
             <AnimatedSection key={course.code} delay={i * 0.05}>
               <Link href={`/courses/${course.slug}`} className="group block h-full">
                 <div
-                  className={`bg-bg-card rounded-2xl border p-6 flex flex-col h-full transition-all duration-300 group-hover:shadow-xl group-hover:border-accent-cyan/30 ${
+                  className={`bg-bg-card rounded-2xl border overflow-hidden flex flex-col h-full transition-all duration-300 group-hover:shadow-xl group-hover:border-accent-cyan/30 ${
                     course.popular
                       ? "border-accent-cyan ring-1 ring-accent-cyan/30"
                       : "border-bg-elevated"
                   }`}
                 >
+                  {/* Thumbnail */}
+                  {course.thumbnail && (
+                    <div className="relative h-40 overflow-hidden">
+                      <img
+                        src={course.thumbnail}
+                        alt={course.title}
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-bg-card to-transparent" />
+                    </div>
+                  )}
+
+                  <div className="p-6 flex flex-col flex-grow">
                   <div className="flex items-start justify-between mb-4">
                     <span className="text-xs font-mono text-accent-cyan bg-accent-cyan/10 rounded px-2 py-1">
                       {course.code}
@@ -97,6 +110,7 @@ export default function CoursesPage() {
                     <span className="text-sm font-medium text-accent-cyan">
                       View Details &rarr;
                     </span>
+                  </div>
                   </div>
                 </div>
               </Link>

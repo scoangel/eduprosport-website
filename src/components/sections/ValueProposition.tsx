@@ -16,7 +16,12 @@ const iconMap = {
 
 export default function ValueProposition() {
   return (
-    <SectionWrapper id="about" bgVariant="dark">
+    <SectionWrapper id="about" bgVariant="dark" className="relative">
+      {/* Background image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center opacity-10"
+        style={{ backgroundImage: "url('/images/about-bg.jpeg')" }}
+      />
       <SectionHeader
         title="Why Choose HDC Europe?"
         subtitle="The leading hockey development system trusted by coaches and centers across Europe"

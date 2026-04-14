@@ -49,14 +49,25 @@ export default function Certifications() {
         </div>
       </div>
 
-      {/* CTA */}
-      <div className="text-center mt-14">
-        <p className="text-text-secondary mb-6">
-          Become a certified trainer for hockey centers worldwide
-        </p>
-        <Button href="/#pricing" size="lg">
-          Start Your Certification
-        </Button>
+      {/* Certificate badge + CTA */}
+      <div className="flex flex-col md:flex-row items-center gap-10 mt-14">
+        <div className="flex-shrink-0">
+          <img
+            src="/images/cert-badge.jpeg"
+            alt="HDC Europe Certificate Badge"
+            className="w-48 h-48 rounded-2xl object-cover border border-accent-cyan/20 shadow-lg"
+          />
+        </div>
+        <div className="text-center md:text-left">
+          <h3 className="text-xl font-bold mb-2">HDC Certificate</h3>
+          <p className="text-text-secondary mb-6">
+            Become a certified trainer for hockey centers worldwide. Your HDC certificate
+            is backed by HDTS Group methodology, active in 50+ centers across 20 countries.
+          </p>
+          <Button href="/certifications" size="lg">
+            Start Your Certification
+          </Button>
+        </div>
       </div>
     </SectionWrapper>
   );

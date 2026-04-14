@@ -68,6 +68,17 @@ export default async function CourseDetailPage({
               )}
             </div>
 
+            {/* Course thumbnail */}
+            {course.thumbnail && (
+              <div className="rounded-2xl overflow-hidden mb-8 border border-bg-elevated">
+                <img
+                  src={course.thumbnail}
+                  alt={course.title}
+                  className="w-full h-64 object-cover"
+                />
+              </div>
+            )}
+
             <h2 className="text-2xl font-bold mb-6">Course Overview</h2>
             <p className="text-text-secondary leading-relaxed mb-8">
               {course.description} Developed by our team of Olympic-level sports

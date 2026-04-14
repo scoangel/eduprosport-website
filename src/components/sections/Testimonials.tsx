@@ -28,7 +28,16 @@ export default function Testimonials() {
   const t = TESTIMONIALS[current];
 
   return (
-    <SectionWrapper id="testimonials" bgVariant="card">
+    <SectionWrapper id="testimonials" bgVariant="card" className="relative overflow-hidden">
+      {/* Decorative background images */}
+      <div
+        className="absolute top-0 left-0 w-80 h-80 bg-cover bg-center opacity-5 rounded-full blur-sm -translate-x-1/3 -translate-y-1/3"
+        style={{ backgroundImage: "url('/images/testimonial-bg-1.jpeg')" }}
+      />
+      <div
+        className="absolute bottom-0 right-0 w-80 h-80 bg-cover bg-center opacity-5 rounded-full blur-sm translate-x-1/3 translate-y-1/3"
+        style={{ backgroundImage: "url('/images/testimonial-bg-2.jpeg')" }}
+      />
       <SectionHeader title="What Our Graduates Say" />
 
       <div

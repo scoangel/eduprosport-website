@@ -79,8 +79,12 @@ export default function AboutPage() {
       </SectionWrapper>
 
       {/* Stats */}
-      <SectionWrapper bgVariant="card">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <SectionWrapper bgVariant="card" className="relative overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-10"
+          style={{ backgroundImage: "url('/images/stats-bg.jpeg')" }}
+        />
+        <div className="relative z-10 grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, i) => (
             <AnimatedSection key={stat.label} delay={i * 0.1}>
               <div className="text-center">
